@@ -1,0 +1,844 @@
+Last login: Sun Apr 12 20:41:47 on ttys000
+sapnajha@Sapnas-MacBook-Pro ~ % 
+  [Restored 10 May 2026 at 1:01:12 AM]
+Last login: Sat May  9 16:47:46 on console
+Restored session: Sat May  9 15:36:57 IST 2026
+sapnajha@Sapnas-MacBook-Pro ~ % ls
+Applications	Desktop		Documents	Downloads	Library		Movies		Music		Pictures	Public
+sapnajha@Sapnas-MacBook-Pro ~ % pwd
+/Users/sapnajha
+sapnajha@Sapnas-MacBook-Pro ~ % cd Documents 
+sapnajha@Sapnas-MacBook-Pro Documents % mkdir youtube
+sapnajha@Sapnas-MacBook-Pro Documents % cd
+sapnajha@Sapnas-MacBook-Pro ~ % cd..
+zsh: command not found: cd..
+sapnajha@Sapnas-MacBook-Pro ~ % pwd
+/Users/sapnajha
+sapnajha@Sapnas-MacBook-Pro ~ % cd Documents 
+sapnajha@Sapnas-MacBook-Pro Documents % mkdir ai-news-terminal
+sapnajha@Sapnas-MacBook-Pro Documents % cd ai-news-terminal
+sapnajha@Sapnas-MacBook-Pro ai-news-terminal % python3 -m venv venv
+sapnajha@Sapnas-MacBook-Pro ai-news-terminal % source venv/bin/activate
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % 
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % 
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % 
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % pip install streamlit pandas requests python-dotenv
+Collecting streamlit
+  Downloading streamlit-1.50.0-py3-none-any.whl (10.1 MB)
+     |████████████████████████████████| 10.1 MB 3.8 MB/s 
+Collecting pandas
+  Using cached pandas-2.3.3-cp39-cp39-macosx_11_0_arm64.whl (10.8 MB)
+Collecting requests
+  Using cached requests-2.32.5-py3-none-any.whl (64 kB)
+Collecting python-dotenv
+  Using cached python_dotenv-1.2.1-py3-none-any.whl (21 kB)
+Collecting toml<2,>=0.10.1
+  Downloading toml-0.10.2-py2.py3-none-any.whl (16 kB)
+Collecting tenacity<10,>=8.1.0
+  Downloading tenacity-9.1.2-py3-none-any.whl (28 kB)
+Collecting protobuf<7,>=3.20
+  Downloading protobuf-6.33.6-cp39-abi3-macosx_10_9_universal2.whl (427 kB)
+     |████████████████████████████████| 427 kB 3.9 MB/s 
+Collecting blinker<2,>=1.5.0
+  Downloading blinker-1.9.0-py3-none-any.whl (8.5 kB)
+Collecting pydeck<1,>=0.8.0b4
+  Downloading pydeck-0.9.2-py2.py3-none-any.whl (11.3 MB)
+     |████████████████████████████████| 11.3 MB 5.3 MB/s 
+Collecting numpy<3,>=1.23
+  Using cached numpy-2.0.2-cp39-cp39-macosx_14_0_arm64.whl (5.3 MB)
+Collecting typing-extensions<5,>=4.4.0
+  Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+     |████████████████████████████████| 44 kB 5.7 MB/s 
+Collecting altair!=5.4.0,!=5.4.1,<6,>=4.0
+  Downloading altair-5.5.0-py3-none-any.whl (731 kB)
+     |████████████████████████████████| 731 kB 10.5 MB/s 
+Collecting click<9,>=7.0
+  Downloading click-8.1.8-py3-none-any.whl (98 kB)
+     |████████████████████████████████| 98 kB 12.6 MB/s 
+Collecting tornado!=6.5.0,<7,>=6.0.3
+  Downloading tornado-6.5.5-cp39-abi3-macosx_10_9_universal2.whl (445 kB)
+     |████████████████████████████████| 445 kB 13.0 MB/s 
+Collecting pillow<12,>=7.1.0
+  Downloading pillow-11.3.0-cp39-cp39-macosx_11_0_arm64.whl (4.7 MB)
+     |████████████████████████████████| 4.7 MB 14.9 MB/s 
+Collecting gitpython!=3.1.19,<4,>=3.0.7
+  Downloading gitpython-3.1.50-py3-none-any.whl (212 kB)
+     |████████████████████████████████| 212 kB 10.3 MB/s 
+Collecting cachetools<7,>=4.0
+  Downloading cachetools-6.2.6-py3-none-any.whl (11 kB)
+Collecting packaging<26,>=20
+  Downloading packaging-25.0-py3-none-any.whl (66 kB)
+     |████████████████████████████████| 66 kB 9.5 MB/s 
+Collecting pyarrow>=7.0
+  Downloading pyarrow-21.0.0-cp39-cp39-macosx_12_0_arm64.whl (31.2 MB)
+     |████████████████████████████████| 31.2 MB 7.1 MB/s 
+Collecting tzdata>=2022.7
+  Downloading tzdata-2026.2-py2.py3-none-any.whl (349 kB)
+     |████████████████████████████████| 349 kB 6.8 MB/s 
+Collecting python-dateutil>=2.8.2
+  Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Collecting pytz>=2020.1
+  Downloading pytz-2026.2-py2.py3-none-any.whl (510 kB)
+     |████████████████████████████████| 510 kB 7.4 MB/s 
+Collecting urllib3<3,>=1.21.1
+  Using cached urllib3-2.6.3-py3-none-any.whl (131 kB)
+Collecting charset_normalizer<4,>=2
+  Downloading charset_normalizer-3.4.7-cp39-cp39-macosx_10_9_universal2.whl (299 kB)
+     |████████████████████████████████| 299 kB 7.2 MB/s 
+Collecting certifi>=2017.4.17
+  Downloading certifi-2026.4.22-py3-none-any.whl (135 kB)
+     |████████████████████████████████| 135 kB 6.5 MB/s 
+Collecting idna<4,>=2.5
+  Downloading idna-3.13-py3-none-any.whl (68 kB)
+     |████████████████████████████████| 68 kB 9.9 MB/s 
+Collecting jsonschema>=3.0
+  Downloading jsonschema-4.25.1-py3-none-any.whl (90 kB)
+     |████████████████████████████████| 90 kB 10.1 MB/s 
+Collecting jinja2
+  Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+     |████████████████████████████████| 134 kB 6.1 MB/s 
+Collecting narwhals>=1.14.2
+  Downloading narwhals-2.21.0-py3-none-any.whl (451 kB)
+     |████████████████████████████████| 451 kB 6.1 MB/s 
+Collecting gitdb<5,>=4.0.1
+  Downloading gitdb-4.0.12-py3-none-any.whl (62 kB)
+     |████████████████████████████████| 62 kB 6.0 MB/s 
+Collecting smmap<6,>=3.0.1
+  Downloading smmap-5.0.3-py3-none-any.whl (24 kB)
+Collecting jsonschema-specifications>=2023.03.6
+  Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+Collecting referencing>=0.28.4
+  Downloading referencing-0.36.2-py3-none-any.whl (26 kB)
+Collecting rpds-py>=0.7.1
+  Downloading rpds_py-0.27.1-cp39-cp39-macosx_11_0_arm64.whl (354 kB)
+     |████████████████████████████████| 354 kB 8.3 MB/s 
+Collecting attrs>=22.2.0
+  Downloading attrs-26.1.0-py3-none-any.whl (67 kB)
+     |████████████████████████████████| 67 kB 10.7 MB/s 
+Collecting MarkupSafe>=2.0
+  Downloading markupsafe-3.0.3-cp39-cp39-macosx_11_0_arm64.whl (12 kB)
+Collecting six>=1.5
+  Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+Installing collected packages: typing-extensions, rpds-py, attrs, referencing, smmap, six, MarkupSafe, jsonschema-specifications, urllib3, tzdata, pytz, python-dateutil, packaging, numpy, narwhals, jsonschema, jinja2, idna, gitdb, charset-normalizer, certifi, tornado, toml, tenacity, requests, pydeck, pyarrow, protobuf, pillow, pandas, gitpython, click, cachetools, blinker, altair, streamlit, python-dotenv
+Successfully installed MarkupSafe-3.0.3 altair-5.5.0 attrs-26.1.0 blinker-1.9.0 cachetools-6.2.6 certifi-2026.4.22 charset-normalizer-3.4.7 click-8.1.8 gitdb-4.0.12 gitpython-3.1.50 idna-3.13 jinja2-3.1.6 jsonschema-4.25.1 jsonschema-specifications-2025.9.1 narwhals-2.21.0 numpy-2.0.2 packaging-25.0 pandas-2.3.3 pillow-11.3.0 protobuf-6.33.6 pyarrow-21.0.0 pydeck-0.9.2 python-dateutil-2.9.0.post0 python-dotenv-1.2.1 pytz-2026.2 referencing-0.36.2 requests-2.32.5 rpds-py-0.27.1 six-1.17.0 smmap-5.0.3 streamlit-1.50.0 tenacity-9.1.2 toml-0.10.2 tornado-6.5.5 typing-extensions-4.15.0 tzdata-2026.2 urllib3-2.6.3
+WARNING: You are using pip version 21.2.4; however, version 26.0.1 is available.
+You should consider upgrading via the '/Users/sapnajha/Documents/ai-news-terminal/venv/bin/python3 -m pip install --upgrade pip' command.
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % mkdir -p ai-news-terminal/{src,data} && touch ai-news-terminal/{app.py,.env,requirements.txt,src/fetch_news.py}
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % 
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % 
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % 
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % 
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % 
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % git init
+Initialized empty Git repository in /Users/sapnajha/Documents/ai-news-terminal/.git/
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % touch .gitignore
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % vi .gitignore
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % 
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % 
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % 
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % 
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % git add .
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % git commit -m "Initial project structure setup"
+[main (root-commit) 8b9d6cf] Initial project structure setup
+ Committer: Sapna jha <sapnajha@Sapnas-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 5 files changed, 6 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 ai-news-terminal/app.py
+ create mode 100644 ai-news-terminal/requirements.txt
+ create mode 100644 ai-news-terminal/src/fetch_news.py
+ create mode 100644 docs/steps.txt
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % git remote add origin https://github.com/jhabinoy/ai-news-terminal.git
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % git branch -M main
+git push -u origin main
+Username for 'https://github.com': jhabinoy
+Password for 'https://jhabinoy@github.com': 
+remote: Invalid username or token. Password authentication is not supported for Git operations.
+fatal: Authentication failed for 'https://github.com/jhabinoy/ai-news-terminal.git/'
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % 
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % 
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % 
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % git branch -M main
+git push -u origin main
+Username for 'https://github.com': jhaBinoy
+Password for 'https://jhaBinoy@github.com': 
+remote: Invalid username or token. Password authentication is not supported for Git operations.
+fatal: Authentication failed for 'https://github.com/jhabinoy/ai-news-terminal.git/'
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % 
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % 
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % 
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % brew install gh
+zsh: command not found: brew
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % pip install brew
+Collecting brew
+  Downloading brew-0.1.4.zip (48 kB)
+     |████████████████████████████████| 48 kB 2.1 MB/s 
+    ERROR: Command errored out with exit status 1:
+     command: /Users/sapnajha/Documents/ai-news-terminal/venv/bin/python3 -c 'import io, os, sys, setuptools, tokenize; sys.argv[0] = '"'"'/private/var/folders/zh/gn4w4l_d651fj0tsdzb99wm80000gn/T/pip-install-w3j6lrim/brew_c10b33be1d3c46c9b87e5ff223841592/setup.py'"'"'; __file__='"'"'/private/var/folders/zh/gn4w4l_d651fj0tsdzb99wm80000gn/T/pip-install-w3j6lrim/brew_c10b33be1d3c46c9b87e5ff223841592/setup.py'"'"';f = getattr(tokenize, '"'"'open'"'"', open)(__file__) if os.path.exists(__file__) else io.StringIO('"'"'from setuptools import setup; setup()'"'"');code = f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' egg_info --egg-base /private/var/folders/zh/gn4w4l_d651fj0tsdzb99wm80000gn/T/pip-pip-egg-info-h8d222__
+         cwd: /private/var/folders/zh/gn4w4l_d651fj0tsdzb99wm80000gn/T/pip-install-w3j6lrim/brew_c10b33be1d3c46c9b87e5ff223841592/
+    Complete output (5 lines):
+    Traceback (most recent call last):
+      File "<string>", line 1, in <module>
+      File "/private/var/folders/zh/gn4w4l_d651fj0tsdzb99wm80000gn/T/pip-install-w3j6lrim/brew_c10b33be1d3c46c9b87e5ff223841592/setup.py", line 22, in <module>
+        with open('requirements.txt') as fid:
+    FileNotFoundError: [Errno 2] No such file or directory: 'requirements.txt'
+    ----------------------------------------
+WARNING: Discarding https://files.pythonhosted.org/packages/71/19/75f6d42ca862c6b31e2da9864d94f59fe81978ac5d40c43937a1c17fd065/brew-0.1.4.zip#sha256=11f23fe972631685e2a146f91747f78bbcad9dd2e20e6ea84a3058459c605948 (from https://pypi.org/simple/brew/). Command errored out with exit status 1: python setup.py egg_info Check the logs for full command output.
+  Downloading brew-0.1.3.zip (42 kB)
+     |████████████████████████████████| 42 kB 3.6 MB/s 
+Using legacy 'setup.py install' for brew, since package 'wheel' is not installed.
+Installing collected packages: brew
+    Running setup.py install for brew ... done
+Successfully installed brew-0.1.3
+WARNING: You are using pip version 21.2.4; however, version 26.0.1 is available.
+You should consider upgrading via the '/Users/sapnajha/Documents/ai-news-terminal/venv/bin/python3 -m pip install --upgrade pip' command.
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % brew install gh 
+zsh: command not found: brew
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+==> Checking for `sudo` access (which may request your password)...
+Password:
+==> This script will install:
+/opt/homebrew/bin/brew
+/opt/homebrew/share/doc/homebrew
+/opt/homebrew/share/man/man1/brew.1
+/opt/homebrew/share/zsh/site-functions/_brew
+/opt/homebrew/etc/bash_completion.d/brew
+/opt/homebrew
+/etc/paths.d/homebrew
+==> The following new directories will be created:
+/opt/homebrew/bin
+/opt/homebrew/etc
+/opt/homebrew/include
+/opt/homebrew/lib
+/opt/homebrew/sbin
+/opt/homebrew/share
+/opt/homebrew/var
+/opt/homebrew/opt
+/opt/homebrew/share/zsh
+/opt/homebrew/share/zsh/site-functions
+/opt/homebrew/var/homebrew
+/opt/homebrew/var/homebrew/linked
+/opt/homebrew/Cellar
+/opt/homebrew/Caskroom
+/opt/homebrew/Frameworks
+
+Press RETURN/ENTER to continue or any other key to abort:
+==> /usr/bin/sudo /usr/bin/install -d -o root -g wheel -m 0755 /opt/homebrew
+==> /usr/bin/sudo /bin/mkdir -p /opt/homebrew/bin /opt/homebrew/etc /opt/homebrew/include /opt/homebrew/lib /opt/homebrew/sbin /opt/homebrew/share /opt/homebrew/var /opt/homebrew/opt /opt/homebrew/share/zsh /opt/homebrew/share/zsh/site-functions /opt/homebrew/var/homebrew /opt/homebrew/var/homebrew/linked /opt/homebrew/Cellar /opt/homebrew/Caskroom /opt/homebrew/Frameworks
+==> /usr/bin/sudo /bin/chmod ug=rwx /opt/homebrew/bin /opt/homebrew/etc /opt/homebrew/include /opt/homebrew/lib /opt/homebrew/sbin /opt/homebrew/share /opt/homebrew/var /opt/homebrew/opt /opt/homebrew/share/zsh /opt/homebrew/share/zsh/site-functions /opt/homebrew/var/homebrew /opt/homebrew/var/homebrew/linked /opt/homebrew/Cellar /opt/homebrew/Caskroom /opt/homebrew/Frameworks
+==> /usr/bin/sudo /bin/chmod go-w /opt/homebrew/share/zsh /opt/homebrew/share/zsh/site-functions
+==> /usr/bin/sudo /usr/sbin/chown sapnajha /opt/homebrew/bin /opt/homebrew/etc /opt/homebrew/include /opt/homebrew/lib /opt/homebrew/sbin /opt/homebrew/share /opt/homebrew/var /opt/homebrew/opt /opt/homebrew/share/zsh /opt/homebrew/share/zsh/site-functions /opt/homebrew/var/homebrew /opt/homebrew/var/homebrew/linked /opt/homebrew/Cellar /opt/homebrew/Caskroom /opt/homebrew/Frameworks
+==> /usr/bin/sudo /usr/bin/chgrp admin /opt/homebrew/bin /opt/homebrew/etc /opt/homebrew/include /opt/homebrew/lib /opt/homebrew/sbin /opt/homebrew/share /opt/homebrew/var /opt/homebrew/opt /opt/homebrew/share/zsh /opt/homebrew/share/zsh/site-functions /opt/homebrew/var/homebrew /opt/homebrew/var/homebrew/linked /opt/homebrew/Cellar /opt/homebrew/Caskroom /opt/homebrew/Frameworks
+==> /usr/bin/sudo /usr/sbin/chown -R sapnajha:admin /opt/homebrew
+==> Downloading and installing Homebrew...
+remote: Enumerating objects: 332457, done.
+remote: Counting objects: 100% (343/343), done.
+remote: Compressing objects: 100% (199/199), done.
+remote: Total 332457 (delta 193), reused 199 (delta 144), pack-reused 332114 (from 2)
+remote: Enumerating objects: 55, done.
+remote: Counting objects: 100% (33/33), done.
+remote: Total 55 (delta 33), reused 33 (delta 33), pack-reused 22 (from 1)
+==> /usr/bin/sudo /bin/mkdir -p /etc/paths.d
+==> /usr/bin/sudo tee /etc/paths.d/homebrew
+/opt/homebrew/bin
+==> /usr/bin/sudo /usr/sbin/chown root:wheel /etc/paths.d/homebrew
+==> /usr/bin/sudo /bin/chmod a+r /etc/paths.d/homebrew
+==> Updating Homebrew...
+==> Downloading https://ghcr.io/v2/homebrew/core/portable-ruby/blobs/sha256:8ad98d9cf15477d1a43f4012cfd5eff5c271398bca1e2724b55bd4944a0bb1d4
+############################################################################################################################################################################################################################################# 100.0%
+==> Pouring portable-ruby-4.0.3.arm64_big_sur.bottle.tar.gz
+==> Installation successful!
+
+==> Homebrew has enabled anonymous aggregate formulae and cask analytics.
+Read the analytics documentation (and how to opt-out) here:
+  https://docs.brew.sh/Analytics
+No analytics data has been sent yet (nor will any be during this install run).
+
+==> Homebrew is run entirely by unpaid volunteers. Please consider donating:
+  https://github.com/Homebrew/brew#donations
+
+==> Next steps:
+- Run these commands in your terminal to add Homebrew to your PATH:
+    echo >> /Users/sapnajha/.zprofile
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv zsh)"' >> /Users/sapnajha/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv zsh)"
+- Run brew help to get started
+- Further documentation:
+    https://docs.brew.sh
+
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % 
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % 
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % 
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % 
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % brew --version
+Homebrew 5.1.10
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % brew install gh
+==> Fetching downloads for: gh
+✔︎ Bottle Manifest gh (2.92.0)                                                                                                                                                                                            Downloaded    7.3KB/  7.3KB
+✔︎ Bottle gh (2.92.0)                                                                                                                                                                                                     Downloaded   13.1MB/ 13.1MB
+==> Pouring gh--2.92.0.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/gh/2.92.0: 229 files, 37.8MB
+==> Running `brew cleanup gh`...
+Disable this behaviour by setting `HOMEBREW_NO_INSTALL_CLEANUP=1`.
+Hide these hints with `HOMEBREW_NO_ENV_HINTS=1` (see `man brew`).
+==> Caveats
+zsh completions have been installed to:
+  /opt/homebrew/share/zsh/site-functions
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % 
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % 
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % 
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % 
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % gh auth login
+? Where do you use GitHub? GitHub.com
+? What is your preferred protocol for Git operations on this host? HTTPS
+? Authenticate Git with your GitHub credentials? Yes
+? How would you like to authenticate GitHub CLI? Login with a web browser
+
+! First copy your one-time code: 3118-1E42
+Press Enter to open https://github.com/login/device in your browser... 
+✓ Authentication complete.
+- gh config set -h github.com git_protocol https
+✓ Configured git protocol
+✓ Logged in as jhabinoy
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % 
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % 
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % 
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % 
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % 
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % 
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % git push -u origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (7/7), 562 bytes | 562.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/jhabinoy/ai-news-terminal.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % pip uninstall brew
+Found existing installation: brew 0.1.3
+Uninstalling brew-0.1.3:
+  Would remove:
+    /Users/sapnajha/Documents/ai-news-terminal/venv/lib/python3.9/site-packages/brew-0.1.3-py3.9.egg-info
+    /Users/sapnajha/Documents/ai-news-terminal/venv/lib/python3.9/site-packages/brew/*
+  Would not remove (outside of prefix):
+    /Users/sapnajha/Library/Caches/com.apple.python/Users/sapnajha/Documents/ai-news-terminal/venv/lib/python3.9/site-packages/brew/__init__.cpython-39.pyc
+    /Users/sapnajha/Library/Caches/com.apple.python/Users/sapnajha/Documents/ai-news-terminal/venv/lib/python3.9/site-packages/brew/base.cpython-39.pyc
+    /Users/sapnajha/Library/Caches/com.apple.python/Users/sapnajha/Documents/ai-news-terminal/venv/lib/python3.9/site-packages/brew/combination/__init__.cpython-39.pyc
+    /Users/sapnajha/Library/Caches/com.apple.python/Users/sapnajha/Documents/ai-news-terminal/venv/lib/python3.9/site-packages/brew/combination/combiner.cpython-39.pyc
+    /Users/sapnajha/Library/Caches/com.apple.python/Users/sapnajha/Documents/ai-news-terminal/venv/lib/python3.9/site-packages/brew/combination/rules.cpython-39.pyc
+    /Users/sapnajha/Library/Caches/com.apple.python/Users/sapnajha/Documents/ai-news-terminal/venv/lib/python3.9/site-packages/brew/generation/__init__.cpython-39.pyc
+    /Users/sapnajha/Library/Caches/com.apple.python/Users/sapnajha/Documents/ai-news-terminal/venv/lib/python3.9/site-packages/brew/generation/bagging.cpython-39.pyc
+    /Users/sapnajha/Library/Caches/com.apple.python/Users/sapnajha/Documents/ai-news-terminal/venv/lib/python3.9/site-packages/brew/generation/base.cpython-39.pyc
+    /Users/sapnajha/Library/Caches/com.apple.python/Users/sapnajha/Documents/ai-news-terminal/venv/lib/python3.9/site-packages/brew/generation/ics_bagging.cpython-39.pyc
+    /Users/sapnajha/Library/Caches/com.apple.python/Users/sapnajha/Documents/ai-news-terminal/venv/lib/python3.9/site-packages/brew/generation/random_subspace.cpython-39.pyc
+    /Users/sapnajha/Library/Caches/com.apple.python/Users/sapnajha/Documents/ai-news-terminal/venv/lib/python3.9/site-packages/brew/generation/smote_bagging.cpython-39.pyc
+    /Users/sapnajha/Library/Caches/com.apple.python/Users/sapnajha/Documents/ai-news-terminal/venv/lib/python3.9/site-packages/brew/metrics/__init__.cpython-39.pyc
+    /Users/sapnajha/Library/Caches/com.apple.python/Users/sapnajha/Documents/ai-news-terminal/venv/lib/python3.9/site-packages/brew/metrics/diversity/__init__.cpython-39.pyc
+    /Users/sapnajha/Library/Caches/com.apple.python/Users/sapnajha/Documents/ai-news-terminal/venv/lib/python3.9/site-packages/brew/metrics/diversity/base.cpython-39.pyc
+    /Users/sapnajha/Library/Caches/com.apple.python/Users/sapnajha/Documents/ai-news-terminal/venv/lib/python3.9/site-packages/brew/metrics/diversity/non_paired.cpython-39.pyc
+    /Users/sapnajha/Library/Caches/com.apple.python/Users/sapnajha/Documents/ai-news-terminal/venv/lib/python3.9/site-packages/brew/metrics/diversity/paired.cpython-39.pyc
+    /Users/sapnajha/Library/Caches/com.apple.python/Users/sapnajha/Documents/ai-news-terminal/venv/lib/python3.9/site-packages/brew/metrics/evaluation.cpython-39.pyc
+    /Users/sapnajha/Library/Caches/com.apple.python/Users/sapnajha/Documents/ai-news-terminal/venv/lib/python3.9/site-packages/brew/preprocessing/__init__.cpython-39.pyc
+    /Users/sapnajha/Library/Caches/com.apple.python/Users/sapnajha/Documents/ai-news-terminal/venv/lib/python3.9/site-packages/brew/preprocessing/smote.cpython-39.pyc
+    /Users/sapnajha/Library/Caches/com.apple.python/Users/sapnajha/Documents/ai-news-terminal/venv/lib/python3.9/site-packages/brew/selection/__init__.cpython-39.pyc
+    /Users/sapnajha/Library/Caches/com.apple.python/Users/sapnajha/Documents/ai-news-terminal/venv/lib/python3.9/site-packages/brew/selection/dynamic/__init__.cpython-39.pyc
+    /Users/sapnajha/Library/Caches/com.apple.python/Users/sapnajha/Documents/ai-news-terminal/venv/lib/python3.9/site-packages/brew/selection/dynamic/base.cpython-39.pyc
+    /Users/sapnajha/Library/Caches/com.apple.python/Users/sapnajha/Documents/ai-news-terminal/venv/lib/python3.9/site-packages/brew/selection/dynamic/knora.cpython-39.pyc
+    /Users/sapnajha/Library/Caches/com.apple.python/Users/sapnajha/Documents/ai-news-terminal/venv/lib/python3.9/site-packages/brew/selection/dynamic/lca.cpython-39.pyc
+    /Users/sapnajha/Library/Caches/com.apple.python/Users/sapnajha/Documents/ai-news-terminal/venv/lib/python3.9/site-packages/brew/selection/dynamic/ola.cpython-39.pyc
+    /Users/sapnajha/Library/Caches/com.apple.python/Users/sapnajha/Documents/ai-news-terminal/venv/lib/python3.9/site-packages/brew/selection/dynamic/probabilistic.cpython-39.pyc
+    /Users/sapnajha/Library/Caches/com.apple.python/Users/sapnajha/Documents/ai-news-terminal/venv/lib/python3.9/site-packages/brew/selection/pruning/__init__.cpython-39.pyc
+    /Users/sapnajha/Library/Caches/com.apple.python/Users/sapnajha/Documents/ai-news-terminal/venv/lib/python3.9/site-packages/brew/selection/pruning/base.cpython-39.pyc
+    /Users/sapnajha/Library/Caches/com.apple.python/Users/sapnajha/Documents/ai-news-terminal/venv/lib/python3.9/site-packages/brew/selection/pruning/epic.cpython-39.pyc
+    /Users/sapnajha/Library/Caches/com.apple.python/Users/sapnajha/Documents/ai-news-terminal/venv/lib/python3.9/site-packages/brew/selection/static/__init__.cpython-39.pyc
+    /Users/sapnajha/Library/Caches/com.apple.python/Users/sapnajha/Documents/ai-news-terminal/venv/lib/python3.9/site-packages/brew/stacking/__init__.cpython-39.pyc
+    /Users/sapnajha/Library/Caches/com.apple.python/Users/sapnajha/Documents/ai-news-terminal/venv/lib/python3.9/site-packages/brew/stacking/stacker.cpython-39.pyc
+    /Users/sapnajha/Library/Caches/com.apple.python/Users/sapnajha/Documents/ai-news-terminal/venv/lib/python3.9/site-packages/brew/utils/__init__.cpython-39.pyc
+    /Users/sapnajha/Library/Caches/com.apple.python/Users/sapnajha/Documents/ai-news-terminal/venv/lib/python3.9/site-packages/brew/utils/data.cpython-39.pyc
+Proceed (Y/n)? y
+  Successfully uninstalled brew-0.1.3
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % pwd
+/Users/sapnajha/Documents/ai-news-terminal
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % cd..
+zsh: command not found: cd..
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % pwd
+/Users/sapnajha/Documents/ai-news-terminal
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % mv ai-news-terminal/* .
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % pwd
+/Users/sapnajha/Documents/ai-news-terminal
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % ls -l
+total 0
+drwxr-xr-x  4 sapnajha  staff  128 10 May 21:57 ai-news-terminal
+-rw-r--r--  1 sapnajha  staff    0 10 May 17:33 app.py
+drwxr-xr-x  2 sapnajha  staff   64 10 May 17:33 data
+drwxr-xr-x  3 sapnajha  staff   96 10 May 17:26 docs
+-rw-r--r--  1 sapnajha  staff    0 10 May 17:33 requirements.txt
+drwxr-xr-x  3 sapnajha  staff   96 10 May 17:33 src
+drwxr-xr-x  8 sapnajha  staff  256 10 May 17:28 venv
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % rmdir ai-news-terminal
+rmdir: ai-news-terminal: Directory not empty
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % rmdir -r ai-news-terminal
+rmdir: illegal option -- r
+usage: rmdir [-pv] directory ...
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % rmdir -rf ai-news-terminal
+rmdir: illegal option -- r
+usage: rmdir [-pv] directory ...
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % rmdir -iR ai-news-terminal
+rmdir: illegal option -- i
+usage: rmdir [-pv] directory ...
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % rmdir -R ai-news-terminal 
+rmdir: illegal option -- R
+usage: rmdir [-pv] directory ...
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % rm -r ai-news-terminal
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % pwd
+/Users/sapnajha/Documents/ai-news-terminal
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % ls -l
+total 0
+-rw-r--r--  1 sapnajha  staff    0 10 May 17:33 app.py
+drwxr-xr-x  2 sapnajha  staff   64 10 May 17:33 data
+drwxr-xr-x  3 sapnajha  staff   96 10 May 17:26 docs
+-rw-r--r--  1 sapnajha  staff    0 10 May 17:33 requirements.txt
+drwxr-xr-x  3 sapnajha  staff   96 10 May 17:33 src
+drwxr-xr-x  8 sapnajha  staff  256 10 May 17:28 venv
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % git add .
+git commit -m "Fix nested project structure"
+git push
+[main a10a0cf] Fix nested project structure
+ Committer: Sapna jha <sapnajha@Sapnas-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ rename ai-news-terminal/app.py => app.py (100%)
+ rename ai-news-terminal/requirements.txt => requirements.txt (100%)
+ rename {ai-news-terminal/src => src}/fetch_news.py (100%)
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 429 bytes | 429.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/jhabinoy/ai-news-terminal.git
+   8b9d6cf..a10a0cf  main -> main
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % ls -l    
+total 0
+-rw-r--r--  1 sapnajha  staff    0 10 May 17:33 app.py
+drwxr-xr-x  2 sapnajha  staff   64 10 May 17:33 data
+drwxr-xr-x  3 sapnajha  staff   96 10 May 17:26 docs
+-rw-r--r--  1 sapnajha  staff    0 10 May 17:33 requirements.txt
+drwxr-xr-x  3 sapnajha  staff   96 10 May 17:33 src
+drwxr-xr-x  8 sapnajha  staff  256 10 May 17:28 venv
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % tree
+zsh: command not found: tree
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % pwd 
+/Users/sapnajha/Documents/ai-news-terminal
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % ls -l 
+total 0
+-rw-r--r--  1 sapnajha  staff    0 10 May 17:33 app.py
+drwxr-xr-x  2 sapnajha  staff   64 10 May 17:33 data
+drwxr-xr-x  3 sapnajha  staff   96 10 May 17:26 docs
+-rw-r--r--  1 sapnajha  staff    0 10 May 17:33 requirements.txt
+drwxr-xr-x  3 sapnajha  staff   96 10 May 17:33 src
+drwxr-xr-x  8 sapnajha  staff  256 10 May 17:28 venv
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % touch .gitignore
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % vi .gitignore
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % ls -la
+total 24
+drwxr-xr-x  11 sapnajha  staff   352 10 May 22:01 .
+drwx------+ 13 sapnajha  staff   416 10 May 17:33 ..
+-rw-r--r--@  1 sapnajha  staff  6148 10 May 17:33 .DS_Store
+drwxr-xr-x  12 sapnajha  staff   384 10 May 21:58 .git
+-rw-r--r--   1 sapnajha  staff    49 10 May 22:01 .gitignore
+-rw-r--r--   1 sapnajha  staff     0 10 May 17:33 app.py
+drwxr-xr-x   2 sapnajha  staff    64 10 May 17:33 data
+drwxr-xr-x   3 sapnajha  staff    96 10 May 17:26 docs
+-rw-r--r--   1 sapnajha  staff     0 10 May 17:33 requirements.txt
+drwxr-xr-x   3 sapnajha  staff    96 10 May 17:33 src
+drwxr-xr-x   8 sapnajha  staff   256 10 May 17:28 venv
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % touch README.md
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % 
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % vi README.md        
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % git add .
+git commit -m "Add README and project roadmap"
+git push
+[main 0193fa9] Add README and project roadmap
+ Committer: Sapna jha <sapnajha@Sapnas-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 28 insertions(+)
+ create mode 100644 README.md
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 555 bytes | 555.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/jhabinoy/ai-news-terminal.git
+   a10a0cf..0193fa9  main -> main
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % ls
+app.py			data			docs			README.md		requirements.txt	src			venv
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % vi requirements.txt 
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % vi requirements.txt
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % pip install -r requirements.txt
+Requirement already satisfied: streamlit in ./venv/lib/python3.9/site-packages (from -r requirements.txt (line 1)) (1.50.0)
+Requirement already satisfied: pandas in ./venv/lib/python3.9/site-packages (from -r requirements.txt (line 2)) (2.3.3)
+Requirement already satisfied: requests in ./venv/lib/python3.9/site-packages (from -r requirements.txt (line 3)) (2.32.5)
+Requirement already satisfied: python-dotenv in ./venv/lib/python3.9/site-packages (from -r requirements.txt (line 4)) (1.2.1)
+Collecting chromadb
+  Downloading chromadb-1.5.9-cp39-abi3-macosx_11_0_arm64.whl (21.7 MB)
+     |████████████████████████████████| 21.7 MB 8.3 MB/s 
+Collecting sentence-transformers
+  Downloading sentence_transformers-5.1.2-py3-none-any.whl (488 kB)
+     |████████████████████████████████| 488 kB 12.4 MB/s 
+Collecting openai
+  Downloading openai-2.36.0-py3-none-any.whl (1.3 MB)
+     |████████████████████████████████| 1.3 MB 18.4 MB/s 
+Requirement already satisfied: gitpython!=3.1.19,<4,>=3.0.7 in ./venv/lib/python3.9/site-packages (from streamlit->-r requirements.txt (line 1)) (3.1.50)
+Requirement already satisfied: toml<2,>=0.10.1 in ./venv/lib/python3.9/site-packages (from streamlit->-r requirements.txt (line 1)) (0.10.2)
+Requirement already satisfied: packaging<26,>=20 in ./venv/lib/python3.9/site-packages (from streamlit->-r requirements.txt (line 1)) (25.0)
+Requirement already satisfied: blinker<2,>=1.5.0 in ./venv/lib/python3.9/site-packages (from streamlit->-r requirements.txt (line 1)) (1.9.0)
+Requirement already satisfied: altair!=5.4.0,!=5.4.1,<6,>=4.0 in ./venv/lib/python3.9/site-packages (from streamlit->-r requirements.txt (line 1)) (5.5.0)
+Requirement already satisfied: click<9,>=7.0 in ./venv/lib/python3.9/site-packages (from streamlit->-r requirements.txt (line 1)) (8.1.8)
+Requirement already satisfied: protobuf<7,>=3.20 in ./venv/lib/python3.9/site-packages (from streamlit->-r requirements.txt (line 1)) (6.33.6)
+Requirement already satisfied: pydeck<1,>=0.8.0b4 in ./venv/lib/python3.9/site-packages (from streamlit->-r requirements.txt (line 1)) (0.9.2)
+Requirement already satisfied: tenacity<10,>=8.1.0 in ./venv/lib/python3.9/site-packages (from streamlit->-r requirements.txt (line 1)) (9.1.2)
+Requirement already satisfied: tornado!=6.5.0,<7,>=6.0.3 in ./venv/lib/python3.9/site-packages (from streamlit->-r requirements.txt (line 1)) (6.5.5)
+Requirement already satisfied: numpy<3,>=1.23 in ./venv/lib/python3.9/site-packages (from streamlit->-r requirements.txt (line 1)) (2.0.2)
+Requirement already satisfied: pyarrow>=7.0 in ./venv/lib/python3.9/site-packages (from streamlit->-r requirements.txt (line 1)) (21.0.0)
+Requirement already satisfied: typing-extensions<5,>=4.4.0 in ./venv/lib/python3.9/site-packages (from streamlit->-r requirements.txt (line 1)) (4.15.0)
+Requirement already satisfied: cachetools<7,>=4.0 in ./venv/lib/python3.9/site-packages (from streamlit->-r requirements.txt (line 1)) (6.2.6)
+Requirement already satisfied: pillow<12,>=7.1.0 in ./venv/lib/python3.9/site-packages (from streamlit->-r requirements.txt (line 1)) (11.3.0)
+Requirement already satisfied: python-dateutil>=2.8.2 in ./venv/lib/python3.9/site-packages (from pandas->-r requirements.txt (line 2)) (2.9.0.post0)
+Requirement already satisfied: pytz>=2020.1 in ./venv/lib/python3.9/site-packages (from pandas->-r requirements.txt (line 2)) (2026.2)
+Requirement already satisfied: tzdata>=2022.7 in ./venv/lib/python3.9/site-packages (from pandas->-r requirements.txt (line 2)) (2026.2)
+Requirement already satisfied: certifi>=2017.4.17 in ./venv/lib/python3.9/site-packages (from requests->-r requirements.txt (line 3)) (2026.4.22)
+Requirement already satisfied: charset_normalizer<4,>=2 in ./venv/lib/python3.9/site-packages (from requests->-r requirements.txt (line 3)) (3.4.7)
+Requirement already satisfied: idna<4,>=2.5 in ./venv/lib/python3.9/site-packages (from requests->-r requirements.txt (line 3)) (3.13)
+Requirement already satisfied: urllib3<3,>=1.21.1 in ./venv/lib/python3.9/site-packages (from requests->-r requirements.txt (line 3)) (2.6.3)
+Collecting opentelemetry-sdk>=1.2.0
+  Downloading opentelemetry_sdk-1.41.1-py3-none-any.whl (180 kB)
+     |████████████████████████████████| 180 kB 13.9 MB/s 
+Collecting uvicorn[standard]>=0.18.3
+  Downloading uvicorn-0.39.0-py3-none-any.whl (68 kB)
+     |████████████████████████████████| 68 kB 14.8 MB/s 
+Collecting pydantic>=2.0
+  Downloading pydantic-2.13.4-py3-none-any.whl (472 kB)
+     |████████████████████████████████| 472 kB 12.7 MB/s 
+Collecting httpx>=0.27.0
+  Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+     |████████████████████████████████| 73 kB 7.7 MB/s 
+Collecting tqdm>=4.65.0
+  Downloading tqdm-4.67.3-py3-none-any.whl (78 kB)
+     |████████████████████████████████| 78 kB 10.3 MB/s 
+Collecting typer>=0.9.0
+  Downloading typer-0.23.2-py3-none-any.whl (56 kB)
+     |████████████████████████████████| 56 kB 15.1 MB/s 
+Collecting importlib-resources
+  Downloading importlib_resources-6.5.2-py3-none-any.whl (37 kB)
+Collecting pydantic-settings>=2.0
+  Downloading pydantic_settings-2.11.0-py3-none-any.whl (48 kB)
+     |████████████████████████████████| 48 kB 18.3 MB/s 
+Collecting opentelemetry-exporter-otlp-proto-grpc>=1.2.0
+  Downloading opentelemetry_exporter_otlp_proto_grpc-1.41.1-py3-none-any.whl (20 kB)
+Collecting rich>=10.11.0
+  Downloading rich-15.0.0-py3-none-any.whl (310 kB)
+     |████████████████████████████████| 310 kB 12.7 MB/s 
+Requirement already satisfied: jsonschema>=4.19.0 in ./venv/lib/python3.9/site-packages (from chromadb->-r requirements.txt (line 5)) (4.25.1)
+Collecting pyyaml>=6.0.0
+  Downloading pyyaml-6.0.3-cp39-cp39-macosx_11_0_arm64.whl (174 kB)
+     |████████████████████████████████| 174 kB 11.5 MB/s 
+Collecting orjson>=3.9.12
+  Downloading orjson-3.11.5-cp39-cp39-macosx_10_15_x86_64.macosx_11_0_arm64.macosx_10_15_universal2.whl (245 kB)
+     |████████████████████████████████| 245 kB 12.6 MB/s 
+Collecting opentelemetry-api>=1.2.0
+  Downloading opentelemetry_api-1.41.1-py3-none-any.whl (69 kB)
+     |████████████████████████████████| 69 kB 12.7 MB/s 
+Collecting build>=1.0.3
+  Downloading build-1.4.4-py3-none-any.whl (25 kB)
+Collecting mmh3>=4.0.1
+  Downloading mmh3-5.2.0-cp39-cp39-macosx_11_0_arm64.whl (40 kB)
+     |████████████████████████████████| 40 kB 16.3 MB/s 
+Collecting pybase64>=1.4.1
+  Downloading pybase64-1.4.3-cp39-cp39-macosx_11_0_arm64.whl (31 kB)
+Collecting pypika>=0.48.9
+  Downloading pypika-0.51.1-py2.py3-none-any.whl (60 kB)
+     |████████████████████████████████| 60 kB 14.7 MB/s 
+Collecting bcrypt>=4.0.1
+  Downloading bcrypt-5.0.0-cp39-abi3-macosx_10_12_universal2.whl (495 kB)
+     |████████████████████████████████| 495 kB 14.5 MB/s 
+Collecting grpcio>=1.58.0
+  Downloading grpcio-1.80.0-cp39-cp39-macosx_11_0_universal2.whl (12.0 MB)
+     |████████████████████████████████| 12.0 MB 13.7 MB/s 
+Collecting kubernetes>=28.1.0
+  Downloading kubernetes-35.0.0-py2.py3-none-any.whl (2.0 MB)
+     |████████████████████████████████| 2.0 MB 9.4 MB/s 
+Collecting tokenizers>=0.13.2
+  Downloading tokenizers-0.22.2-cp39-abi3-macosx_11_0_arm64.whl (3.0 MB)
+     |████████████████████████████████| 3.0 MB 13.0 MB/s 
+Collecting onnxruntime>=1.14.1
+  Downloading onnxruntime-1.19.2-cp39-cp39-macosx_11_0_universal2.whl (16.8 MB)
+     |████████████████████████████████| 16.8 MB 7.7 MB/s 
+Collecting overrides>=7.3.1
+  Downloading overrides-7.7.0-py3-none-any.whl (17 kB)
+Collecting scikit-learn
+  Downloading scikit_learn-1.6.1-cp39-cp39-macosx_12_0_arm64.whl (11.1 MB)
+     |████████████████████████████████| 11.1 MB 6.9 MB/s 
+Collecting huggingface-hub>=0.20.0
+  Downloading huggingface_hub-1.8.0-py3-none-any.whl (625 kB)
+     |████████████████████████████████| 625 kB 11.4 MB/s 
+Collecting transformers<5.0.0,>=4.41.0
+  Downloading transformers-4.57.6-py3-none-any.whl (12.0 MB)
+     |████████████████████████████████| 12.0 MB 11.0 MB/s 
+Collecting torch>=1.11.0
+  Downloading torch-2.8.0-cp39-none-macosx_11_0_arm64.whl (73.6 MB)
+     |████████████████████████████████| 73.6 MB 10.0 MB/s 
+Collecting scipy
+  Downloading scipy-1.13.1-cp39-cp39-macosx_12_0_arm64.whl (30.3 MB)
+     |████████████████████████████████| 30.3 MB 9.0 MB/s 
+Collecting distro<2,>=1.7.0
+  Downloading distro-1.9.0-py3-none-any.whl (20 kB)
+Collecting anyio<5,>=3.5.0
+  Downloading anyio-4.12.1-py3-none-any.whl (113 kB)
+     |████████████████████████████████| 113 kB 12.2 MB/s 
+Collecting jiter<1,>=0.10.0
+  Downloading jiter-0.14.0-cp39-cp39-macosx_11_0_arm64.whl (315 kB)
+     |████████████████████████████████| 315 kB 15.0 MB/s 
+Collecting sniffio
+  Downloading sniffio-1.3.1-py3-none-any.whl (10 kB)
+Requirement already satisfied: jinja2 in ./venv/lib/python3.9/site-packages (from altair!=5.4.0,!=5.4.1,<6,>=4.0->streamlit->-r requirements.txt (line 1)) (3.1.6)
+Requirement already satisfied: narwhals>=1.14.2 in ./venv/lib/python3.9/site-packages (from altair!=5.4.0,!=5.4.1,<6,>=4.0->streamlit->-r requirements.txt (line 1)) (2.21.0)
+Collecting exceptiongroup>=1.0.2
+  Downloading exceptiongroup-1.3.1-py3-none-any.whl (16 kB)
+Collecting importlib-metadata>=4.6
+  Downloading importlib_metadata-8.7.1-py3-none-any.whl (27 kB)
+Collecting pyproject_hooks
+  Downloading pyproject_hooks-1.2.0-py3-none-any.whl (10 kB)
+Collecting tomli>=1.1.0
+  Downloading tomli-2.4.1-py3-none-any.whl (14 kB)
+Requirement already satisfied: gitdb<5,>=4.0.1 in ./venv/lib/python3.9/site-packages (from gitpython!=3.1.19,<4,>=3.0.7->streamlit->-r requirements.txt (line 1)) (4.0.12)
+Requirement already satisfied: smmap<6,>=3.0.1 in ./venv/lib/python3.9/site-packages (from gitdb<5,>=4.0.1->gitpython!=3.1.19,<4,>=3.0.7->streamlit->-r requirements.txt (line 1)) (5.0.3)
+Collecting httpcore==1.*
+  Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+     |████████████████████████████████| 78 kB 7.9 MB/s 
+Collecting h11>=0.16
+  Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+Collecting filelock>=3.10.0
+  Downloading filelock-3.19.1-py3-none-any.whl (15 kB)
+Collecting hf-xet<2.0.0,>=1.4.2
+  Downloading hf_xet-1.5.0-cp37-abi3-macosx_11_0_arm64.whl (3.8 MB)
+     |████████████████████████████████| 3.8 MB 19.8 MB/s 
+Collecting fsspec>=2023.5.0
+  Downloading fsspec-2025.10.0-py3-none-any.whl (200 kB)
+     |████████████████████████████████| 200 kB 10.6 MB/s 
+Collecting zipp>=3.20
+  Downloading zipp-3.23.1-py3-none-any.whl (10 kB)
+Requirement already satisfied: referencing>=0.28.4 in ./venv/lib/python3.9/site-packages (from jsonschema>=4.19.0->chromadb->-r requirements.txt (line 5)) (0.36.2)
+Requirement already satisfied: jsonschema-specifications>=2023.03.6 in ./venv/lib/python3.9/site-packages (from jsonschema>=4.19.0->chromadb->-r requirements.txt (line 5)) (2025.9.1)
+Requirement already satisfied: rpds-py>=0.7.1 in ./venv/lib/python3.9/site-packages (from jsonschema>=4.19.0->chromadb->-r requirements.txt (line 5)) (0.27.1)
+Requirement already satisfied: attrs>=22.2.0 in ./venv/lib/python3.9/site-packages (from jsonschema>=4.19.0->chromadb->-r requirements.txt (line 5)) (26.1.0)
+Collecting websocket-client!=0.40.0,!=0.41.*,!=0.42.*,>=0.32.0
+  Downloading websocket_client-1.9.0-py3-none-any.whl (82 kB)
+     |████████████████████████████████| 82 kB 5.4 MB/s 
+Collecting requests-oauthlib
+  Downloading requests_oauthlib-2.0.0-py2.py3-none-any.whl (24 kB)
+Requirement already satisfied: six>=1.9.0 in ./venv/lib/python3.9/site-packages (from kubernetes>=28.1.0->chromadb->-r requirements.txt (line 5)) (1.17.0)
+Collecting durationpy>=0.7
+  Downloading durationpy-0.10-py3-none-any.whl (3.9 kB)
+Collecting coloredlogs
+  Downloading coloredlogs-15.0.1-py2.py3-none-any.whl (46 kB)
+     |████████████████████████████████| 46 kB 9.7 MB/s 
+Collecting sympy
+  Downloading sympy-1.14.0-py3-none-any.whl (6.3 MB)
+     |████████████████████████████████| 6.3 MB 13.5 MB/s 
+Collecting flatbuffers
+  Downloading flatbuffers-25.12.19-py2.py3-none-any.whl (26 kB)
+Collecting opentelemetry-exporter-otlp-proto-common==1.41.1
+  Downloading opentelemetry_exporter_otlp_proto_common-1.41.1-py3-none-any.whl (18 kB)
+Collecting opentelemetry-proto==1.41.1
+  Downloading opentelemetry_proto-1.41.1-py3-none-any.whl (72 kB)
+     |████████████████████████████████| 72 kB 2.2 MB/s 
+Collecting googleapis-common-protos~=1.57
+  Downloading googleapis_common_protos-1.75.0-py3-none-any.whl (300 kB)
+     |████████████████████████████████| 300 kB 16.2 MB/s 
+Collecting opentelemetry-semantic-conventions==0.62b1
+  Downloading opentelemetry_semantic_conventions-0.62b1-py3-none-any.whl (231 kB)
+     |████████████████████████████████| 231 kB 14.9 MB/s 
+Collecting pydantic-core==2.46.4
+  Downloading pydantic_core-2.46.4-cp39-cp39-macosx_11_0_arm64.whl (2.0 MB)
+     |████████████████████████████████| 2.0 MB 17.1 MB/s 
+Collecting annotated-types>=0.6.0
+  Downloading annotated_types-0.7.0-py3-none-any.whl (13 kB)
+Collecting typing-inspection>=0.4.2
+  Downloading typing_inspection-0.4.2-py3-none-any.whl (14 kB)
+Requirement already satisfied: MarkupSafe>=2.0 in ./venv/lib/python3.9/site-packages (from jinja2->altair!=5.4.0,!=5.4.1,<6,>=4.0->streamlit->-r requirements.txt (line 1)) (3.0.3)
+Collecting markdown-it-py>=2.2.0
+  Downloading markdown_it_py-3.0.0-py3-none-any.whl (87 kB)
+     |████████████████████████████████| 87 kB 9.6 MB/s 
+Collecting pygments<3.0.0,>=2.13.0
+  Downloading pygments-2.20.0-py3-none-any.whl (1.2 MB)
+     |████████████████████████████████| 1.2 MB 8.8 MB/s 
+Collecting mdurl~=0.1
+  Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Collecting networkx
+  Downloading networkx-3.2.1-py3-none-any.whl (1.6 MB)
+     |████████████████████████████████| 1.6 MB 13.1 MB/s 
+Collecting mpmath<1.4,>=1.1.0
+  Downloading mpmath-1.3.0-py3-none-any.whl (536 kB)
+     |████████████████████████████████| 536 kB 8.7 MB/s 
+Collecting huggingface-hub>=0.20.0
+  Downloading huggingface_hub-0.36.2-py3-none-any.whl (566 kB)
+     |████████████████████████████████| 566 kB 14.5 MB/s 
+Collecting safetensors>=0.4.3
+  Downloading safetensors-0.7.0-cp38-abi3-macosx_11_0_arm64.whl (447 kB)
+     |████████████████████████████████| 447 kB 14.8 MB/s 
+Collecting regex!=2019.12.17
+  Downloading regex-2026.1.15-cp39-cp39-macosx_11_0_arm64.whl (288 kB)
+     |████████████████████████████████| 288 kB 12.3 MB/s 
+Collecting shellingham>=1.3.0
+  Downloading shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+Collecting annotated-doc>=0.0.2
+  Downloading annotated_doc-0.0.4-py3-none-any.whl (5.3 kB)
+Collecting websockets>=10.4
+  Downloading websockets-15.0.1-cp39-cp39-macosx_11_0_arm64.whl (173 kB)
+     |████████████████████████████████| 173 kB 9.9 MB/s 
+Collecting uvloop>=0.15.1
+  Downloading uvloop-0.22.1-cp39-cp39-macosx_10_9_universal2.whl (1.3 MB)
+     |████████████████████████████████| 1.3 MB 14.7 MB/s 
+Collecting watchfiles>=0.13
+  Downloading watchfiles-1.1.1-cp39-cp39-macosx_11_0_arm64.whl (396 kB)
+     |████████████████████████████████| 396 kB 13.4 MB/s 
+Collecting httptools>=0.6.3
+  Downloading httptools-0.7.1-cp39-cp39-macosx_11_0_arm64.whl (110 kB)
+     |████████████████████████████████| 110 kB 6.1 MB/s 
+Collecting humanfriendly>=9.1
+  Downloading humanfriendly-10.0-py2.py3-none-any.whl (86 kB)
+     |████████████████████████████████| 86 kB 7.7 MB/s 
+Collecting oauthlib>=3.0.0
+  Downloading oauthlib-3.3.1-py3-none-any.whl (160 kB)
+     |████████████████████████████████| 160 kB 12.4 MB/s 
+Collecting joblib>=1.2.0
+  Downloading joblib-1.5.3-py3-none-any.whl (309 kB)
+     |████████████████████████████████| 309 kB 12.6 MB/s 
+Collecting threadpoolctl>=3.1.0
+  Downloading threadpoolctl-3.6.0-py3-none-any.whl (18 kB)
+Installing collected packages: zipp, importlib-metadata, tqdm, pyyaml, opentelemetry-api, mdurl, hf-xet, fsspec, filelock, exceptiongroup, typing-inspection, pygments, pydantic-core, opentelemetry-semantic-conventions, opentelemetry-proto, oauthlib, mpmath, markdown-it-py, humanfriendly, huggingface-hub, h11, anyio, annotated-types, websockets, websocket-client, watchfiles, uvloop, uvicorn, tomli, tokenizers, threadpoolctl, sympy, shellingham, scipy, safetensors, rich, requests-oauthlib, regex, pyproject-hooks, pydantic, opentelemetry-sdk, opentelemetry-exporter-otlp-proto-common, networkx, joblib, httptools, httpcore, grpcio, googleapis-common-protos, flatbuffers, durationpy, coloredlogs, annotated-doc, typer, transformers, torch, sniffio, scikit-learn, pypika, pydantic-settings, pybase64, overrides, orjson, opentelemetry-exporter-otlp-proto-grpc, onnxruntime, mmh3, kubernetes, jiter, importlib-resources, httpx, distro, build, bcrypt, sentence-transformers, openai, chromadb
+Successfully installed annotated-doc-0.0.4 annotated-types-0.7.0 anyio-4.12.1 bcrypt-5.0.0 build-1.4.4 chromadb-1.5.9 coloredlogs-15.0.1 distro-1.9.0 durationpy-0.10 exceptiongroup-1.3.1 filelock-3.19.1 flatbuffers-25.12.19 fsspec-2025.10.0 googleapis-common-protos-1.75.0 grpcio-1.80.0 h11-0.16.0 hf-xet-1.5.0 httpcore-1.0.9 httptools-0.7.1 httpx-0.28.1 huggingface-hub-0.36.2 humanfriendly-10.0 importlib-metadata-8.7.1 importlib-resources-6.5.2 jiter-0.14.0 joblib-1.5.3 kubernetes-35.0.0 markdown-it-py-3.0.0 mdurl-0.1.2 mmh3-5.2.0 mpmath-1.3.0 networkx-3.2.1 oauthlib-3.3.1 onnxruntime-1.19.2 openai-2.36.0 opentelemetry-api-1.41.1 opentelemetry-exporter-otlp-proto-common-1.41.1 opentelemetry-exporter-otlp-proto-grpc-1.41.1 opentelemetry-proto-1.41.1 opentelemetry-sdk-1.41.1 opentelemetry-semantic-conventions-0.62b1 orjson-3.11.5 overrides-7.7.0 pybase64-1.4.3 pydantic-2.13.4 pydantic-core-2.46.4 pydantic-settings-2.11.0 pygments-2.20.0 pypika-0.51.1 pyproject-hooks-1.2.0 pyyaml-6.0.3 regex-2026.1.15 requests-oauthlib-2.0.0 rich-15.0.0 safetensors-0.7.0 scikit-learn-1.6.1 scipy-1.13.1 sentence-transformers-5.1.2 shellingham-1.5.4 sniffio-1.3.1 sympy-1.14.0 threadpoolctl-3.6.0 tokenizers-0.22.2 tomli-2.4.1 torch-2.8.0 tqdm-4.67.3 transformers-4.57.6 typer-0.23.2 typing-inspection-0.4.2 uvicorn-0.39.0 uvloop-0.22.1 watchfiles-1.1.1 websocket-client-1.9.0 websockets-15.0.1 zipp-3.23.1
+WARNING: You are using pip version 21.2.4; however, version 26.0.1 is available.
+You should consider upgrading via the '/Users/sapnajha/Documents/ai-news-terminal/venv/bin/python3 -m pip install --upgrade pip' command.
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % pip freeze > requirements.txt
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % git add .
+git commit -m "Add project dependencies"
+git push
+[main 5e332ab] Add project dependencies
+ Committer: Sapna jha <sapnajha@Sapnas-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 112 insertions(+)
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.32 KiB | 1.32 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/jhabinoy/ai-news-terminal.git
+   0193fa9..5e332ab  main -> main
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % touch .env
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % vi .env
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % vi .env
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % vi .env
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % touch src/fetch_news.py
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % ls -ltr
+total 16
+drwxr-xr-x  3 sapnajha  staff    96 10 May 17:26 docs
+drwxr-xr-x  2 sapnajha  staff    64 10 May 17:33 data
+-rw-r--r--  1 sapnajha  staff     0 10 May 17:33 app.py
+drwxr-xr-x  3 sapnajha  staff    96 10 May 17:33 src
+-rw-r--r--  1 sapnajha  staff   426 10 May 22:02 README.md
+-rw-r--r--@ 1 sapnajha  staff  2084 11 May 00:27 requirements.txt
+drwxr-xr-x  9 sapnajha  staff   288 11 May 00:28 venv
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % vi src/fetch_news.py 
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % vi app.py
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % vi app.py
+(venv) sapnajha@Sapnas-MacBook-Pro ai-news-terminal % streamlit run app.py
+
+      👋 Welcome to Streamlit!
+
+      If you'd like to receive helpful onboarding emails, news, offers, promotions,
+      and the occasional swag, please enter your email address below. Otherwise,
+      leave this field blank.
+
+      Email:  bkjsolution@gmail.com
+/Users/sapnajha/Documents/ai-news-terminal/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+
+  You can find our privacy policy at https://streamlit.io/privacy-policy
+
+  Summary:
+  - This open source library collects usage statistics.
+  - We cannot see and do not store information contained inside Streamlit apps,
+    such as text, charts, images, etc.
+  - Telemetry data is stored in servers in the United States.
+  - If you'd like to opt out, add the following to ~/.streamlit/config.toml,
+    creating that file if necessary:
+
+    [browser]
+    gatherUsageStats = false
+
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://192.168.1.16:8501
+
+  For better performance, install the Watchdog module:
+
+  $ xcode-select --install
+  $ pip install watchdog
+            
+
